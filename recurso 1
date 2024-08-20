@@ -1,0 +1,228 @@
+<!DOCTYPE HTML>
+<html>
+   <head> 
+      <meta charset="utf-8" />
+      <title></title>
+      <link rel="stylesheet" href="1nterfaz/interfaz.css" type="text/css" />
+      <link rel="stylesheet" href="css/activity.css"  type="text/css" />
+      <script src="1nterfaz/jquery-1.8.1.min.js" type="text/javascript"></script>
+      <script type="text/javascript" src="config.js"></script>
+      <script type="text/javascript" src="1nterfaz/jquery.touchSwipe.min.js"></script>
+      <script type="text/javascript" src="1nterfaz/sugerencias.js"></script>
+      <script type="text/javascript" src="1nterfaz/interfaz.js"></script>
+      <script type="text/javascript" src="1nterfaz/multipanel.js"></script>
+
+      
+      <script type="text/javascript" src="http://www.shadowbox-js.com/assets/demo.js"></script>
+<link rel="stylesheet" type="text/css" href="js/shadowbox.css">
+<script type="text/javascript" src="js/shadowbox.js"></script>
+
+      
+      <script type="text/javascript">
+Shadowbox.init({
+    // a darker overlay looks better on this particular site
+    overlayOpacity: 0.8
+    // setupDemos is defined in assets/demo.js
+}, setupDemos);
+
+var ua = navigator.userAgent.toLowerCase();
+var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
+$(document).ready(function () {
+ if(isAndroid){
+  $('body').css('background-size','220%').css('background-position','0 0');
+ }
+});
+</script>
+   	<script src="../../jquery.ui.touch-punch.min.js"></script>
+</head>
+
+   <body>
+      <div id="activity">
+         <div id="panelReel">
+
+            <!-- PANEL 1 -->
+            <section>
+           	  <div id="fondo"></div>
+                <div id="parkour">
+                	<div id="roll">
+                      <textarea name="cronica" class="cajatexto">Escibe aquí tu crónica.</textarea>
+                    </div>
+              </div>
+       	  	  <div id="bt1" class="button" style="position:absolute; width:101px; left:141px; top:442px;">Qué es</div>
+       	  	  <div id="bt2" class="button" style="position:absolute; width:101px; left:311px; top:442px;">Entrevista</div>
+                <div id="bt3" class="button" style="position:absolute; width:101px; left:481px; top:442px;">Personaje</div>
+                <div id="bt4" class="button" style="position:absolute; width:101px; left:141px; top:490px;">Galeria</div>
+       	  	  <div id="bt5" class="button" style="position:absolute; width:101px; left:311px; top:490px;">Frases</div>
+           	  <div id="bt6" class="button" style="position:absolute; width:101px; left:481px; top:490px;">Evento</div>
+                <div id="que_es">
+                	<div id="titulo_que_es">¿Qué es?</div>
+                	<div id="texto_que_es">
+                        El <i>parkour</i> es el arte del desplazamiento. Es trasladar el cuerpo de un lugar a otro, en un medio urbano o natural, valiéndose solo de sí mismo. Correr, saltar, trepar, reptar o salvar obstáculos<br>son parte de los recursos necesarios en su práctica. También es indispensable una preparación mental para superar miedos y barreras psicológicas al afrontar los retos.
+                    </div>
+                    <div class="tache" style="left:573px; top:16px;"></div>
+                </div>
+                <div id="entrevista">
+               	  <div id="titulo_entrevista">Entrevista</div>
+                	<div id="texto_entrevista">
+<b>Entrevistador:</b> ¿Qué diferencia hay entre el <i>parkour</i> y otros deportes extremos?<br><br>
+
+<font color="#993300">José Cuesta:</font> Una gran diferencia es que el practicante no necesita ningún equipo para lograr movimientos exitosos. No depende de si los frenos van a fallar o si la tabla o bicicleta son las correctas: nuestro cuerpo nos da una respuesta inmediata y constante.<br><br>
+
+<b>Entrevistador:</b> ¿Qué tipo de entrenamiento se requiere para practicar el <i>parkour</i>?<br><br>
+
+<font color="#993300">José Cuesta:</font>  El cuerpo se  acondiciona para soportar largos períodos de esfuerzo muscular: para ser capaz de levantar, jalar y empujar el peso corporal con facilidad en cualquier dirección; para ser poderoso y explosivo al saltar entre obstáculos; para mantenerse suave y flexible, evitando lesiones.<br><br>
+
+<b>Entrevistador:</b> ¿Vale la pena tanto esfuerzo?<br><br>
+
+<font color="#993300">José Cuesta:</font> Si bien es un montón de trabajo duro y molestias, no hay sustituto a la sensación<br>de libertad que experimentas mientras realizas un trayecto. </div>
+                    
+                    <div class="tache" style="left:690px; top:10px;"></div>
+                </div>
+                <div id="personaje">
+               	  <div id="titulo_personaje">Personaje</div>
+                	<div id="texto_personaje">
+                        David Belle es un deportista y actor, considerado fundador del <i>parkour</i> (en los años 80).  Calificado como el hombre más ágil del mundo, Belle comenzó practicando <i>parkour</i> cuando tenía 12 años, inspirado por su padre y las películas de artes marciales. 
+                    </div>
+                    <div class="tache" style="left:628px; top:34px;"></div>
+                </div>
+                <div id="galeria">
+                	<div id="titulo_galeria">Galeria</div>
+                   <a class="mustang-gallery" href="galeria/galeria_01.jpg"><img src="img/foto1.png" width="167" height="128" style="position:absolute; top: 106px; left: 6px;"></a>   
+               	  <a class="mustang-gallery" href="galeria/galeria_02.jpg"><img src="img/foto2.png" width="139" height="208" style="position:absolute; left: 191px; top: 67px;"></a>
+                  <a class="mustang-gallery" href="galeria/galeria_03.jpg"><img src="img/foto3.png" width="187" height="141" style="position:absolute; left: 350px; top: 108px;"></a>
+                  <a class="mustang-gallery" href="galeria/galeria_04.png"><img src="img/foto4.png" width="123" height="198" style="position:absolute; left: 554px; top: 69px;"></a>
+              	<div class="tache" style="left:631px; top:31px;"></div>
+              </div>
+<div id="frases">
+                	<div id="titulo_frases">Frases</div>
+       	  <div id="texto_frases">
+          <ul>
+              <li>"Ser y durar". Significa que debes entrenar duro para ser fuerte y durar en esta disciplina.</li>
+
+              <li>"El instructor dirige la manada". Quiere decir que este es un compañero más, pero sin alejarse de su función, da ejemplo, sabe motivar,  incentiva y soluciona los problemas de cada alumno.</li>
+
+              <li>"No es enseñar a saltar una valla". Significa que no solo es aprender a mover tu cuerpo en situaciones de riesgo, pues hay valores que se guardan y transmiten.</li>
+			</ul>
+ 
+</div>
+					<div class="tache" style="left:631px; top:31px;"></div>
+                </div>
+              <div id="evento">
+              
+              	<div id="titulo_evento">Eventos</div>
+                	<div id="texto_evento">
+<font color="#dd491b">Seminario de Instructores de <i>parkour</i>.</font><br><br>Finlandia, del 21 al 23 de agosto del 2012. <br><br>
+<font color="#2ea5bd">Objetivo:</font> <br>
+Reunir a practicantes de la disciplina, de varios países, para presentar proyectos de la enseñanza a todos los niveles del <i>parkour</i>. <br><br>
+<font color="#2ea5bd">Actividades:</font><br>
+• Día 1. Métodos de enseñanza para novatos: <br>
+• La importancia de una  buena base técnica (movimientos básicos). <br>
+• Respeto hacia uno mismo, los demás, el entorno y la disciplina.<br>
+• Desarrollar una mentalidad positiva, de sacrificio, de auto superación.<br>
+• Aprendizaje divertido, sin olvidar que requiere gran esfuerzo.<br>
+• Saber reconocer, aceptar y superar el límite de cada uno.<br>
+• Enseñar a diseccionar distintos lugares de entrenamiento.<br>
+• Día 2. Calentamiento para principiantes. <br>
+• Día 3. Entrenamiento por equipos.
+
+
+                    </div>
+                    
+                    <div class="tache" style="left:691px; top:11px;"></div>
+              </div>
+                
+              <script>
+			  var total=0
+                	$("#bt1").click(function(){ 
+					total++
+						$("#parkour").fadeOut('slow')
+						$("#que_es").fadeIn('slow')
+						$("#entrevista").fadeOut('slow')
+						$("#personaje").fadeOut('slow')
+						$("#galeria").fadeOut('slow')
+						$("#frases").fadeOut('slow')
+						$("#evento").fadeOut('slow')
+					});
+					$("#bt2").click(function(){ 
+					total++
+						$("#parkour").fadeOut('slow')
+						$("#que_es").fadeOut('slow')
+						$("#entrevista").fadeIn('slow')
+						$("#personaje").fadeOut('slow')
+						$("#galeria").fadeOut('slow')
+						$("#frases").fadeOut('slow')
+						$("#evento").fadeOut('slow')
+					});
+					$("#bt3").click(function(){ 
+					total++
+						$("#parkour").fadeOut('slow')
+						$("#que_es").fadeOut('slow')
+						$("#entrevista").fadeOut('slow')
+						$("#personaje").fadeIn('slow')
+						$("#galeria").fadeOut('slow')
+						$("#frases").fadeOut('slow')
+						$("#evento").fadeOut('slow')
+					});
+					$("#bt4").click(function(){
+						total++ 
+						$("#parkour").fadeOut('slow')
+						$("#que_es").fadeOut('slow')
+						$("#entrevista").fadeOut('slow')
+						$("#personaje").fadeOut('slow')
+						$("#galeria").fadeIn('slow')
+						$("#frases").fadeOut('slow')
+						$("#evento").fadeOut('slow')
+					});
+					$("#bt5").click(function(){
+						total++
+						$("#parkour").fadeOut('slow') 
+						$("#que_es").fadeOut('slow')
+						$("#entrevista").fadeOut('slow')
+						$("#personaje").fadeOut('slow')
+						$("#galeria").fadeOut('slow')
+						$("#frases").fadeIn('slow')
+						$("#evento").fadeOut('slow')
+					});
+					$("#bt6").click(function(){
+						total++
+						$("#parkour").fadeOut('slow') 
+						$("#que_es").fadeOut('slow')
+						$("#entrevista").fadeOut('slow')
+						$("#personaje").fadeOut('slow')
+						$("#galeria").fadeOut('slow')
+						$("#frases").fadeOut('slow')
+						$("#evento").fadeIn('slow')
+					});
+					
+					$(".tache").click(function(){
+						$("#parkour").fadeIn('slow') 
+						$("#que_es").fadeOut('slow')
+						$("#entrevista").fadeOut('slow')
+						$("#personaje").fadeOut('slow')
+						$("#galeria").fadeOut('slow')
+						$("#frases").fadeOut('slow')
+						$("#evento").fadeOut('slow')
+					});
+					
+					$("#parkour").hover(function(){ 
+					if(total>=6){
+						$("#roll").fadeIn('slow')
+					}
+					}, function(){
+					if(total>=6){ 
+						$("#roll").fadeOut('slow')
+					}
+					});
+                </script>
+                
+           </section> <!--fin panel 1 -->
+         
+
+
+            <!-- agregar un "<section></section>" para cada panel que se necesite, el número de paneles debe coincidir con el número de '{...}' del archivo config.js --> 
+        
+         </div> <!-- fin panelReel -->      
+      </div><!-- fin activity -->
+      
+   </body>
+</html>
